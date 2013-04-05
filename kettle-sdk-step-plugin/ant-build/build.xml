@@ -17,7 +17,7 @@
 
 	<!-- used to compile code -->
 	<path id="compile.classpath">
-		<fileset dir="${basedir}/../compile-time-libs">
+		<fileset dir="${basedir}/lib">
 			<include name="**/*.jar" />
 		</fileset>
 	</path>
@@ -71,6 +71,7 @@
 			<fileset dir="${diststep}" includes="**/*.*" />
 			<fileset dir="${diststep}" includes="**" />
 		</copy>
+		
 		
 		<echo message="Installed the plugin in PDI. To test, please restart Spoon."/>
 	</target>
